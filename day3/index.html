@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Scoped CSS Variables and JS</title>
+</head>
+
+<body>
+    <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color</label>
+        <input id="base" type="color" name="base" value="#ffc600">
+    </div>
+
+    <img class="img" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
+<!-- Lo importante aquí son los tipos de inputs; el type:range, es un input tipo rango donde se puede elegir en una línea con botón deslizante, hay que darle el margen(min-max)necesario(en el caso de blur,que es el enfoque será siempre 1-10) y en este caso  el dato de en que se mide que es en px(data-sizing);
+por otro lado está la etiqueta input type color, que es un input con el típico cuadro de colores donde se puede elegir el color que se desee, se le da uno de base, para que empiece ahí el color y sea el que se ve en el cuadro de inicio. No hay nada de css en esto, sale solo por el tipo de input. -->

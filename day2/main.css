@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-image: url('./fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+.header{
+    margin-top:20px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(6,231,231);
+    text-shadow: 2px 2px 	#000000;
+}
+.time{
+    border:1px solid white;
+    display: inline-block;
+    height: 100%;
+    width: 150px;
+    margin: 5px;
+    margin-top: 20px;  
+    box-shadow:  0 0 0 4px rgba(0,0,0,0.1);
+}
+.buttons{
+    margin-top:25px;
+}
+.audioBtn{
+    background-color:aquamarine;
+    font-size: 25px;
+    box-shadow: 0 0 0 3px grey;
+    font-size:18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.showSongBtn{
+    background-color: aquamarine;
+    font-size: 20px;
+    box-shadow: 0 0 0 2px grey;
+    margin-left: 15px;
+    font-size:18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.song{
+    color:black;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba( 255,255,255,0.7);
+    margin-top: 10px;
+    text-shadow: none;
+}
+.mainWrapper{
+    margin:auto;
+    top:20%;
+    border: 20px solid rgb(6, 231, 231);
+    border-radius: 50%;
+    box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px rgb(28, 163, 123),
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top:30px;
+}
+.clock-face{
+    position: relative; 
+    height: 100%;
+    width: 100%;
+}
+.hand{
+    width: 50%;
+    height: 6px;
+    background-color: black;
+    position:absolute;
+    top:50%;
+    transform-origin:100%;
+    transform: rotate(90deg);
+    transition:all 0.5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 50px;
+}
+.second-hand{
+background-color: rgb(86, 241, 25);
+}
+.hidden{
+    display:none;
+}
+@media (min-width: 768px) {
+    .header{
+        margin-top:auto;
+    font-size: 30px;
+    }
+    .mainWrapper{
+        margin-top:auto;
+        position:relative;
+    }
+    .buttons{
+        margin-top:15px;
+    }
+}
+

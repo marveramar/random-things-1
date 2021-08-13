@@ -1,0 +1,31 @@
+
+    body {
+        text-align: center;
+        background: #193549;
+        color: white;
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+      }
+  
+      .controls {
+        margin-bottom: 50px;
+      }
+  
+      input {
+        width: 100px;
+      }
+      :root{
+        --base: #ffc600;
+        --spacing: 10px;
+        --blur: 10px;
+      }
+      .img{
+        padding: var(--spacing);
+        background:var(--base);
+        filter: blur(var(--blur));
+      }
+      .hl{
+        color: var(--base);
+      }
+      /* aqui lo importante es el --root-- que selecciona el elemento raíz de un árbol( como empieza)/ blur: es el enfoque/ spacing: espacio del borde/ base: es el color inicial. La idea es que se puede dar valor a los estilos de un elemento en base a una variable y no ponerlos fijos. por eso img: tiene sus tres stilos con var */

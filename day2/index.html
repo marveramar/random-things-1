@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css" />
+    <title>clock</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">"Reloj de Confinamiento "</h1>
+        <p>LLevamos:</p>
+        <div class="confiTime">
+            <p class="time" id="hour"></p><span>h</span>
+            <p class="time" id="min"></p><span>m</span>
+            <p class="time" id="sec"></p><span>s</span>
+        </div>
+        <div class="buttons">
+            <button type="button" class="audioBtn">🎼 Qué peli es?</button>
+            <button type="button" class="showSongBtn">Solución</button>
+            <p class="song hidden"></p>
+        </div>
+    </header>
+
+    <main class="mainWrapper">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+        <div class="audioWrap">
+            <audio class="audio" name="Misión Imposible" src="./sounds/mision-imposible-peliculas-.mp3">
+                <audio class="audio" name="Harry Potter" src="./sounds/ringtones-harry-potter.mp3">
+                    <audio class="audio" name="El Padrino" src="./sounds/el-padrino-peliculas-.mp3">
+                        <audio class="audio" name="Indiana Jones" src="./sounds/indiana-jones-series-tv-.mp3">
+                            <audio class="audio" name="Parque Jurásico" src="./sounds/parquejurasico.mp3">
+                                <audio class="audio" name="Amelie" src="./sounds/ringtones-amelie.mp3">
+                                    <audio class="audio" name="Kill Bill"
+                                        src="./sounds/ringtones-kill-bill-whistle.mp3">
+                                        <audio class="audio" name="Piratas del Caribe"
+                                            src="./sounds/ringtones-of-caribbean.mp3">
+                                            <audio class="audio" name="Rocky" src="./sounds/rocky.mp3">
+                                                <audio class="audio" name="Shrek" src="./sounds/shrek-somebodycena.mp3">
+                                                    <audio class="audio" name="Cantando bajo la lluvia"
+                                                        src="sounds/singing-in-the-rain-peliculas-.mp3">
+                                                        <audio class="audio" name="StarWars"
+                                                            src="sounds/starwras-guerra-de-las-galaxias-peliculas-.mp3">
+        </div>
+    </main>
+    <script type="text/javascript" src="./main.js">
+    </script>
+</body>
+
+</html>
