@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilos.css">
+	<script src="https://code.jquery.com/jquery-latest.min.js"> </script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+
+	<div id="main">
+		<div id="menu"></div>
+		<div id="buscador"  class="animated fadeIn">
+			<input 
+				type="text"
+				placeholder="Añade una URL de Youtube..."
+				v-model="url"
+				v-show="!show"
+				v-on:keyup.enter="showTitle">
+			<input
+				type="text"
+				placeholder="Añade un título al vídeo..."
+				id="ttl"
+				v-model="title"
+				v-show="show"
+				v-on:keyup.enter="addData">
+		</div>
+
+		<div id="listado" class="animated bounceInLeft">
+			<ul>
+				<li class="animated bounceInLeft"
+					v-for="video in list"
+					@click="playVideo(video)"
+					:class="{activo:video.active}"
+					@contextmenu.prevent="delVideo(video)">
+					<div class="titulo" :title="video.title">{{video.title}}</div>
+				</li>
+			</ul>
+		</div>
+
+		<iframe id="rpd" allow="autoplay" :src="videoActive"></iframe>
+	</div>
+
+	<script src="vue.js"></script>
+	<script src="dimensiones.js"></script>
+</body>
+</html>
